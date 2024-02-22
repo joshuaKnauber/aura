@@ -1,4 +1,5 @@
 import React from "react";
+import { test } from "@aura/shared";
 
 type AuraProps = {};
 
@@ -6,6 +7,7 @@ const withAura = <T extends React.ElementType>(Component: T) => {
   return (props: React.ComponentProps<T> & AuraProps) => {
     const newProps = {
       ...props,
+      placeholder: test(),
     };
     return React.createElement(Component, newProps as any);
   };

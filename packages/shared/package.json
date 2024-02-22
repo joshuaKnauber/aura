@@ -1,7 +1,8 @@
 {
-  "name": "@aura/react",
+  "name": "@aura/shared",
   "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -23,21 +24,13 @@
   "scripts": {
     "dev": "bunchee --watch",
     "build": "bunchee",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
+    "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.10",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "bunchee": "^4.4.8",
     "eslint": "^8.56.0",
-    "react": "18.2.0",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "@aura/shared": "workspace:^",
-    "bunchee": "^4.4.8"
   }
 }
